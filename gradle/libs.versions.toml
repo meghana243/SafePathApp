@@ -1,0 +1,96 @@
+[versions]
+# --- CORE TOOLING ---
+agp = "8.3.2"
+kotlin = "2.1.0" # Updated to match your newest dependencies
+
+# --- ANDROIDX ---
+coreKtx = "1.12.0"
+lifecycleRuntimeKtx = "2.7.0"
+
+# --- JETPACK COMPOSE ---
+# BOM 2024.04.01
+composeBom = "2024.04.01"
+activityCompose = "1.9.0"
+
+# --- COROUTINES ---
+kotlinxCoroutinesCore = "1.9.0"
+kotlinxCoroutinesAndroid = "1.9.0"
+
+# --- FIREBASE ---
+firebaseBom = "33.1.2"
+firebaseAuth = "23.0.0"
+
+# --- NETWORK + MAP + ML ---
+okhttp = "4.12.0"
+playServicesLocation = "21.3.0"
+osmdroidAndroid = "6.1.18"
+
+# --- TENSORFLOW ---
+tensorflowLite = "2.16.1"
+tensorflowLiteSupport = "0.4.4"
+tensorflowLiteMetadata = "0.4.4"
+
+# --- UI ---
+appcompat = "1.7.0"
+material = "1.12.0"
+
+# --- TESTING ---
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+materialVersion = "1.13.0"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# The new way to handle Compose Compiler in Kotlin 2.0+:
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+[libraries]
+# --- BOM ---
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+
+# --- CORE ---
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+# --- MATERIAL ---
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# --- COMPOSE ---
+# FIXED: The group must be "androidx.compose.material3", not "androidx.compose"
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material" }
+
+# --- COROUTINES ---
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+
+# --- NETWORK ---
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+
+# --- MAP ---
+osmdroid-android = { group = "org.osmdroid", name = "osmdroid-android", version.ref = "osmdroidAndroid" }
+
+# --- TENSORFLOW ---
+tensorflow-lite = { group = "org.tensorflow", name = "tensorflow-lite", version.ref = "tensorflowLite" }
+tensorflow-lite-support = { group = "org.tensorflow", name = "tensorflow-lite-support", version.ref = "tensorflowLiteSupport" }
+tensorflow-lite-metadata = { group = "org.tensorflow", name = "tensorflow-lite-metadata", version.ref = "tensorflowLiteMetadata" }
+
+# --- FIREBASE ---
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+
+# --- TESTING ---
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }

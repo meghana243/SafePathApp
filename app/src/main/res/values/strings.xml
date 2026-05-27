@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">SafePath</string>
+
+    <!-- Bottom Sheet Behavior -->
+    <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="sos_description">Emergency SOS button</string>
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="map_view_description">Interactive map showing route and safety information</string>
+    <string name="search_icon_description">Search icon</string>
+    <string name="my_location_description">Show my current location</string>
+    <string name="search_trigger_description">Search for destination</string>
+    <string name="bottom_sheet_handle_description">Drag handle for safety information panel</string>
+    <string name="road_quality_icon">Road quality indicator</string>
+    <string name="accidents_icon">Past accidents indicator</string>
+    <string name="police_station_icon">Police station proximity</string>
+    <string name="night_safety_icon">Night safety rating</string>
+<!--    <string name="map_view">Map View</string>-->
+    <string name="my_location">My Location</string>
+    <string name="search">Search</string>
+    <string name="sos">SOS</string>
+    <!-- Search Bar -->
+    <string name="search_destination_hint">Search destination...</string>
+
+    <!-- Bottom Sheet Header -->
+    <string name="safety_planner_title">Safety Planner</string>
+    <string name="ready_to_route">Ready to route</string>
+    <string name="go_button">GO</string>
+
+    <!-- AI Model Status -->
+    <string name="ai_model_idle">AI Model: Idle</string>
+    <string name="ai_model_analyzing">AI Model: Analyzing route…</string>
+    <string name="ai_model_complete">AI Model: Analysis complete</string>
+
+    <!-- Analysis Section -->
+    <string name="detailed_analysis">Detailed Analysis</string>
+
+    <!-- Safety Metrics -->
+    <string name="crime_risk">Crime Risk</string>
+    <string name="lighting">Lighting</string>
+    <string name="crowd_density">Crowd Density</string>
+    <string name="road_quality">Road Quality</string>
+    <string name="past_accidents">Past Accidents</string>
+
+    <!-- Placeholder Values -->
+    <string name="placeholder_value">--</string>
+    <string name="placeholder_chip">-</string>
+
+    <!-- Additional Info -->
+    <string name="police_distance_placeholder">Police: --</string>
+    <string name="police_distance_format">Police: %s</string>
+    <string name="night_safety_placeholder">Night: --</string>
+    <string name="night_safety_format">Night: %s</string>
+
+    <!-- News Section -->
+    <string name="recent_safety_news">Recent Safety News</string>
+    <string name="reload_button">Reload</string>
+
+    <!-- Safety Levels -->
+    <string name="safety_level_low">Low</string>
+    <string name="safety_level_medium">Medium</string>
+    <string name="safety_level_high">High</string>
+    <string name="safety_level_very_high">Very High</string>
+
+    <!-- Toast Messages -->
+    <string name="location_permission_denied">Location permission denied</string>
+    <string name="location_services_disabled">Please enable location services</string>
+    <string name="route_calculated">Route calculated successfully</string>
+    <string name="error_calculating_route">Error calculating route</string>
+    <string name="error_loading_news">Failed to load safety news</string>
+
+
+        <!-- App Title -->
+<!--    <string name="app_name">Safety Route Planner</string>-->
+    <string name="app_title">Safety Route Planner</string>
+
+        <!-- Map -->
+<!--        <string name="map_view">Interactive map showing routes and safety information</string>-->
+
+        <!-- Buttons -->
+<!--        <string name="go_button">GO</string>-->
+<!--        <string name="reload_button">Reload</string>-->
+
+        <!-- Route Status -->
+<!--        <string name="ready_to_route">Ready to route</string>-->
+
+        <!-- Route Preferences -->
+        <string name="show_alternative_routes">Show Alternative Routes</string>
+        <string name="route_preferences">ROUTE PREFERENCES</string>
+        <string name="route_fastest">Fastest</string>
+        <string name="route_safest">Safest</string>
+        <string name="route_balanced">Balanced</string>
+
+        <!-- Route Info -->
+        <string name="distance_placeholder">-- km</string>
+        <string name="distance_label">Distance</string>
+        <string name="duration_placeholder">-- min</string>
+        <string name="duration_label">Duration</string>
+        <string name="mode_placeholder">--</string>
+        <string name="mode_label">Mode</string>
+
+        <!-- AI Model -->
+<!--        <string name="ai_model_idle">AI Model: Idle</string>-->
+<!--        <string name="ai_model_analyzing">AI Model: Analyzing…</string>-->
+<!--        <string name="ai_model_complete">AI Model: Analysis Complete</string>-->
+
+        <!-- Analysis Section -->
+        <string name="detailed_analysis_header">Detailed Analysis</string>
+        <string name="crime_risk_label">Crime Risk</string>
+        <string name="lighting_label">Lighting</string>
+        <string name="crowd_density_label">Crowd Density</string>
+        <string name="road_quality_label">Road Quality</string>
+        <string name="past_accidents_label">Past Accidents</string>
+
+        <!-- Data Placeholders -->
+        <string name="data_placeholder">--</string>
+        <string name="no_data">No data</string>
+<!--        <string name="police_distance_placeholder">Police: ~1.2 km</string>-->
+<!--        <string name="night_safety_placeholder">Night: Safe</string>-->
+
+        <!-- News Section -->
+<!--        <string name="recent_safety_news">Recent Safety News</string>-->
+
+        <!-- Search -->
+<!--        <string name="search_destination_hint">Search destination…</string>-->
+        <string name="search_description">Search for routes</string>
+<!--        <string name="my_location_description">Use my current location</string>-->
+
+        <!-- Emergency -->
+<!--        <string name="sos_description">Emergency SOS</string>-->
+
+        <!-- Safety Levels -->
+        <string name="safety_low">Low</string>
+        <string name="safety_moderate">Moderate</string>
+        <string name="safety_high">High</string>
+        <string name="safety_very_high">Very High</string>
+
+        <!-- Status Messages -->
+        <string name="calculating_route">Calculating route…</string>
+        <string name="route_found">Route found</string>
+        <string name="no_route_found">No route found</string>
+        <string name="error_occurred">An error occurred</string>
+
+
+    <!-- Distance Units -->
+    <string name="distance_meters">%dm</string>
+    <string name="distance_kilometers">%.1fkm</string>
+    <string name="recent_searches_label" />
+    <string name="search_destination_title" />
+    <string name="map_view">Map View</string>
+    <string name="manage_sos_contacts">Manage SOS Contacts</string>
+    <string name="safety_route_planner">Safety Route Planner</string>
+    <string name="go">GO</string>
+</resources>

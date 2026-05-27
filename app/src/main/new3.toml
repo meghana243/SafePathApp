@@ -1,0 +1,12 @@
+[plugins]
+agp = "8.13.0"
+kotlin = "2.0.0"
+# ... other versions ...
+
+# ... other plugins ...
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+# REMOVED: kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" } # Note: This also uses "org.jetbrains.kotlin.android", but that's a different plugin from "org.jetbrains.kotlin.plugin.compose"
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+    

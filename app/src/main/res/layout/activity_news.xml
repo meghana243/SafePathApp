@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvNewsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 Safety News"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Subtitle (Recent / Historical info) -->
+    <TextView
+        android:id="@+id/tvNewsSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination-based safety reports"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="16dp" />
+
+    <!-- News List -->
+    <ListView
+        android:id="@+id/listViewNews"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="12dp"
+        android:scrollbars="none"
+        android:paddingBottom="8dp" />
+
+    <!-- Empty State (Shown if no news) -->
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No safety-related news found for this location."
+        android:textColor="#9E9E9E"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBackToMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return to Map"
+        android:backgroundTint="#212121"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
