@@ -1,6 +1,6 @@
 # SafePathApp
 
-SafePathApp is an Android application designed to help users find safe and optimal routes for various modes of transport (driving, walking, cycling) by considering not just distance and duration, but also safety factors. The app leverages OpenStreetMap data and routing services to provide intelligent route suggestions.
+SafePathApp is an Android application designed to help users find safe and optimal routes for various modes of transport (driving, walking, cycling) by considering not just distance and duration, but also safety factors. The app leverages OpenStreetMap data and routing services to provide intelligent route suggestions. The was my final year project in college and a research paper on the project "Real-time smart path recommendation for peoples' safety" was presented and published in the 4th IEEE conference - ICKECS 2026 (https://heyzine.com/flip-book/5ed039d141.html) 
 
 ## Features
 
@@ -76,4 +76,4 @@ To set up and run SafePathApp on your local machine, follow these steps:
 
 ---
 
-**Developed by:** Meghana (or your name)
+
